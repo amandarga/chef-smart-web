@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-oqVuAfXRKapvOjLJjl/rZp5yG0G0MWCkRbWA5ZlpLeg5Cr1NJZ5kaX1VaW9e1PL2" crossorigin="anonymous">
+    <script src="forms-validation.js" defer></script>
+    <title>ChefSmart</title>
+</head>
+<body>
+    <div class="container-body">
+        <aside class="sidebar">
+            <div class="sidebar-title">
+                <img src="image/Logo-ChefSmart.png" alt="Logo" class="logo">
+                <h2>ChefSmart</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="icon-select"><img class="icon" src="image/inicio-icon-select.png" alt="">Início</a></li>
+                    <li><a class="icon-select"><img class="icon" src="image/produto-icon-select.png" alt=""> Produtos</a></li>
+                    <li><a class="icon-select"><img class="icon" src="image/pedido-icon-select.png" alt=""> Pedidos</a></li>
+                    <li><a class="icon-select"><img class="icon" src="image/relatorio-icon-select.png" alt=""> Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h3>Login</h3>
+            </header>
+            <section class="login-diferent">
+                <div class="login-container mascate">
+                    <h2>Mascate</h2>
+                    <form action="masc-home.html" id="form-mascate">
+                        <label for="text">Login</label>
+                        <input type="text" placeholder="Código, user" required>
+                        <br>
+                        <label for="password">Senha</label>
+                        <input type="password" placeholder="Senha" required>
+                        <br>
+                        <input type="submit" value="Entrar">
+                    </form>
+                  </div>
+                  
+                  <div class="login-container">
+                    <h2>Lanchonete/Cafeteria</h2>
+                    <form action="lc-home.html" id="form-lanchonete">
+                        <label for="text">Login</label>
+                        <input type="text" placeholder="Código, user" required>
+                        <br>
+                        <label for="password">Senha</label>
+                        <input type="password" placeholder="Senha" required>
+                        <br>
+                        <input type="submit" value="Entrar">
+                    </form>
+                  </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>© Produto ChefSmart. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-oqVuAfXRKapvOjLJjl/rZp5yG0G0MWCkRbWA5ZlpLeg5Cr1NJZ5kaX1VaW9e1PL2" crossorigin="anonymous">
+    <title>ChefSmart</title>
+</head>
+<body>
+    <div class="container-body">
+        <aside class="sidebar">
+            <div class="sidebar-title">
+                <img src="image/Logo-ChefSmart.png" alt="Logo" class="logo">
+                <h2>ChefSmart</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="masc-home.html"><img class="icon" src="image/inicio-icon.png" alt="">Início</a></li>
+                    <li><a href="masc-products.html"><img class="icon" src="image/produto-icon.png" alt=""> Produtos</a></li>
+                    <li><a href="masc-order.html"><img class="icon" src="image/pedido-icon.png" alt=""> Pedidos</a></li>
+                    <li><a class="icon-select"><img class="icon" src="image/relatorio-icon-select.png" alt=""> Relatórios</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h3>Relatórios</h3>
+            </header>
+            <section>
+                <div class="form-dados">
+                    <h2>Filtros de Pesquisa</h2>
+                    <hr>
+                    <form action="">
+                        <label for="product">Produto</label>
+                        <input type="text" name="product" id="name-product" placeholder="Coxinha">
+                        <label for="code">Código do produto</label>
+                        <input type="number" name="code" id="code-product" placeholder="52">
+                        <label for="dateI">Data inicial</label>
+                        <input type="date" name="dateI" id="date-inicial">
+                        <label for="dateF">Data inicial</label>
+                        <input type="date" name="dateF" id="date-final">
+                        <br><br><br>
+                        <label for="type">Categoria</label>
+                        <select name="type" id="option-type" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="salgado">Salgado</option>
+                            <option value="sobremesa">Sobremesa</option>
+                            <option value="torta">Torta</option>
+                        </select>
+                        <label for="setor">Setor Solicitante</label>
+                        <select name="setor" id="option-setor" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="lanchonete">Lanchonete</option>
+                            <option value="cafeteria">Cafeteria</option>
+                        </select>
+                        <label for="timeI">Horário inicial</label>
+                        <input type="time" name="timeI" id="time-inicial">
+                        <label for="timeF">Horário inicial</label>
+                        <input type="time" name="timeF" id="time-final">
+                    </form>
+                    <hr>
+                    <div class="buttons">
+                        <button>Limpar</button>
+                        <button>Buscar</button>
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="relatorios">
+                    <h2>Resultado da Pesquisa</h2>
+                    <hr>
+                    <div class="buttons">
+                        <button>PDF</button>
+                        <button>Excel</button>
+                    </div>
+                    <hr>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome do Produto</th>
+                                <th>Código</th>
+                                <th>Data Inicial</th>
+                                <th>Data Final</th>
+                                <th>Categoria</th>
+                                <th>Setor Soicitante</th>
+                                <th>Horário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Calzone</td>
+                                <td>944</td>
+                                <td>12/05/2024</td>
+                                <td>12/05/2024</td>
+                                <td>Salgado</td>
+                                <td>Lanchonete</td>
+                                <td>07:25</td>
+                            </tr>
+                            <tr>
+                                <td>Cozinha de Frango</td>
+                                <td>94</td>
+                                <td>12/05/2024</td>
+                                <td>12/05/2024</td>
+                                <td>Salgado</td>
+                                <td>Lanchonete</td>
+                                <td>13:47</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <div class="buttons2">
+                        <button class="branco">Anterior</button>
+                        <button>1</button>
+                        <button class="branco">Próximo</button>
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>© Produto ChefSmart. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

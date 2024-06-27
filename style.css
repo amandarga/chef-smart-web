@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+    border-width: 2px;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.container-body {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-style: solid;
+    border-color: #c8c8c8;
+}
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sidebar-title .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.sidebar h2 {
+    margin: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.sidebar nav ul li a .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.sidebar nav ul li .icon-select {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: #7b7b7b;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    border-bottom: 2px solid #b7b7b7;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: #000000;
+}
+
+section {
+    margin-top: 20px;
+}
+
+/* ------- */
+.login-diferent {
+    font-family: Arial, sans-serif;
+    margin: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+  }
+
+  .login-container h2 {
+    margin-bottom: 60px;
+    color: #000000;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: calc(100% - 0px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .login-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .login-container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .login-container.mascate {
+    margin-right: 10px;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .login-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .login-container.mascate {
+      margin-right: 0;
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+/* ------- */
+
+.search-analytics {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.search-analytics button{
+    cursor: pointer;
+}
+
+.search-analytics .icon-section{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.search-bar{
+    border: 2px solid #E0E0E0;
+    padding: 12px 100px 5px 10px;
+    margin-left: 50px;
+    border-radius: 12px;
+}
+
+.search-bar input{
+    border: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.type-new-order button{
+    cursor: pointer;
+}
+
+.button-filter button{
+    border: 2px solid #E0E0E0;
+    padding: 8px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: rgb(113, 113, 113);
+}
+
+.button-report{
+    margin-left: auto
+}
+
+.button-report button{
+    border: 2px solid #eaeaea;
+    padding: 10px 10px 10px 10px;
+    background-color: #eaeaea;
+    margin-left: 10px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: rgb(30, 30, 30);
+}
+
+
+.type-new-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-order {
+    margin-left: auto;
+}
+
+.type{
+    flex: 1;
+    font-size: 16px;
+}
+
+.type ul, .new-order ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.type li, .new-order li {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.type li img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.new-order li button {
+    border: 2px solid #E0E0E0;
+    padding: 7px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: rgb(113, 113, 113);
+}
+
+.new-order img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+
+.table-order {
+    margin-top: 20px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    font-weight: 800;
+}
+
+tbody{
+    color: #686868;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #ffffff; 
+}
+
+.type-salgado{
+    border: 2px solid #ffe092;
+    padding: 7px;
+    background-color: #ffe092;
+    border-radius: 12px;
+    font-size: 13px;
+    color: black;
+}
+
+.type-sobremesa{
+    border: 2px solid #e3abff;
+    padding: 7px;
+    background-color: #e3abff;
+    border-radius: 12px;
+    font-size: 13px;
+    color: black;
+}
+
+.type-torta{
+    border: 2px solid #f58bc0;
+    padding: 7px;
+    background-color: #f58bc0;
+    border-radius: 12px;
+    font-size: 13px;
+    color: black;
+}
+
+.setor{
+    border: 2px solid #e4e4e4;
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    font-size: 13px;
+    color: black;
+}
+
+.disp{
+    border: 2px solid #55ff00;
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #55ff00;
+}
+
+.indisp{
+    border: 2px solid #ff0000;
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #ff0000;
+}
+
+
+
+th:nth-child(1), td:nth-child(1) {
+    width: 10%; 
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 35%; 
+}
+th:nth-child(3), td:nth-child(3) {
+    width: 10%; 
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 15%; 
+}
+th:nth-child(5), td:nth-child(5) {
+    width: 10%; 
+}
+
+th:nth-child(6), td:nth-child(6) {
+    width: 15%; 
+}
+
+th:nth-child(7), td:nth-child(7) {
+    width: 5%; 
+}
+
+/*FORMS */
+#forms-products {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  
+  #forms-products label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+  
+  #forms-products input[type="number"],
+  #forms-products input[type="text"],
+  #forms-products select {
+    width: calc(50% - 10px); /* 50% do tamanho do formulário menos o espaço entre os campos */
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  #forms-products select {
+    width: 100%;
+  }
+  
+  #forms-products input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #forms-products input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #forms-products .type-disp-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #forms-products #option-type {
+    width: calc(50% - 10px);
+  }
+  
+  #forms-products #option-disp {
+    width: calc(50% - 10px);
+  }
+  
+  /* Estilo para a div que contém Quantidade */
+  #forms-products #quantity-product {
+    width: calc(50% - 10px); /* Preenche 100% da largura da div pai */
+  }
+
+
+  /*FORM DE NOVO PEDIDO*/
+  /* Estilo para o formulário de pedido */
+#forms-order {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  
+
+  #forms-order label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+
+  #forms-order input[type="number"],
+  #forms-order input[type="text"],
+  #forms-order select {
+    width: calc(50% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+
+  #forms-order select {
+    width: calc(50% - 10px); 
+  }
+  
+ 
+  #forms-order input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #forms-order input[type="submit"]:hover {
+    background-color: #45a049;
+  } 
+  
+  .form-dados{
+    background-color: #e6e6e6;
+    padding: 30px 30px 0 30px;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+
+  .form-dados h2{
+    margin: 10px;
+  }
+
+  .form-dados hr{
+    margin: 20px 0 20px;
+  }
+
+  .form-dados form label{
+    font-size: 16px;
+    margin: 8px;
+  }
+
+  .form-dados input[type="number"],
+  .form-dados input[type="text"],
+  .form-dados input[type="date"],
+  .form-dados input[type="time"],
+  .form-dados select {
+    width: calc(12% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  .form-dados .buttons{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+  }
+
+  .form-dados .buttons button{
+    background-color: #5173E5;
+    color: white;
+    padding: 10px;
+    margin: 0 10px 0 0 ;
+    font-size: 15px;
+  }
+
+.relatorios{
+    background-color: #e6e6e6;
+    padding: 30px 30px 0 30px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.relatorios .buttons{
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+  }
+
+  .relatorios .buttons button{
+    background-color: #5173E5;
+    color: white;
+    padding: 10px;
+    margin: 0 10px 0 0 ;
+    font-size: 15px;
+  }
+
+  .relatorios .buttons2{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+  }
+
+  .relatorios .buttons2 button{
+    background-color: #5173E5;
+    color: white;
+    padding: 10px;
+    margin: 0 10px 0 0 ;
+    font-size: 15px;
+  }
+
+  .relatorios .buttons2 .branco{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 0 10px 0 0 ;
+    font-size: 15px;
+  }
+
+footer {
+    background-color: #ffffff;
+    color: #6c6c6c;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    font-size: 10px;
+    width: 100%;
+    border-style: solid;
+    border-color: #b7b7b7;
+}

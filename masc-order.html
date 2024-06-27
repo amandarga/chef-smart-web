@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-oqVuAfXRKapvOjLJjl/rZp5yG0G0MWCkRbWA5ZlpLeg5Cr1NJZ5kaX1VaW9e1PL2" crossorigin="anonymous">
+    <title>ChefSmart</title>
+</head>
+<body>
+    <div class="container-body">
+        <aside class="sidebar">
+            <div class="sidebar-title">
+                <img src="image/Logo-ChefSmart.png" alt="Logo" class="logo">
+                <h2>ChefSmart</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="masc-home.html"><img class="icon" src="image/inicio-icon.png" alt="">Início</a></li>
+                    <li><a href="masc-products.html"><img class="icon" src="image/produto-icon.png" alt=""> Produtos</a></li>
+                    <li><a class="icon-select"><img class="icon" src="image/pedido-icon-select.png" alt=""> Pedidos</a></li>
+                    <li><a href="masc-analytics.html"><img class="icon" src="image/relatorio-icon.png" alt=""> Relatórios</a></li>
+                    <li><a href="index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h3>Pedidos</h3>
+            </header>
+            <section>
+                <div class="search-analytics">
+                    <div class="search-bar">
+                        <img class="icon-section" src="image/procurar-icon.png" alt="">
+                        <input type="text" placeholder="Pesquisar">
+                    </div>
+                    <div class="button-filter">
+                        <button type="submit"><img class="icon-section" src="image/filtro-icon.png" alt=""> Filtro</button>
+                    </div>
+                    <div class="button-report">
+                        <a href="masc-analytics.html"><button><img class="icon-section" src="image/relatorio-icon.png" alt=""> Gerar Relatório</button></a>
+                    </div>
+                </div>
+                <div class="table-order">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Produto</th>
+                                <th>Tipo</th>
+                                <th>Setor</th>
+                                <th>Quantidade</th>
+                                <th>Data</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15</td>
+                                <td>Calzone de Queijo</td>
+                                <td><button class="type-salgado">Salgado</button></td>
+                                <td><button class="setor">Lanchonete</button></td>
+                                <td>15</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Coxinha de Carne de Sol</td>
+                                <td><button class="type-salgado">Salgado</button></td>
+                                <td><button class="setor">Lanchonete</button></td>
+                                <td>20</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>Bolo de Pote - Brigadeiro</td>
+                                <td><button class="type-sobremesa">Sobremesa</button></td>
+                                <td><button class="setor">Lanchonete</button></td>
+                                <td>10</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>59</td>
+                                <td>Brownie</td>
+                                <td><button class="type-sobremesa">Sobremesa</button></td>
+                                <td><button class="setor">Cafeteria</button></td>
+                                <td>12</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Limão</td>
+                                <td><button class="type-torta">Torta</button></td>
+                                <td><button class="setor">Lanchonete</button></td>
+                                <td>2</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>944</td>
+                                <td>Coxinha de Galinha</td>
+                                <td><button class="type-salgado">Salgado</button></td>
+                                <td><button class="setor">Lanchonete</button></td>
+                                <td>20</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>56</td>
+                                <td>Esfirra de Carne</td>
+                                <td><button class="type-salgado">Salgado</button></td>
+                                <td><button class="setor">Cafeteria</button></td>
+                                <td>10</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>96</td>
+                                <td>Bolo de Pote - Brigadeiro</td>
+                                <td><button class="type-sobremesa">Sobremesa</button></td>
+                                <td><button class="setor">Lanchonete</button></td>
+                                <td>10</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>85</td>
+                                <td>Bem casado</td>
+                                <td><button class="type-sobremesa">Sobremesa</button></td>
+                                <td><button class="setor">Cafeteria</button></td>
+                                <td>20</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>Maracujá</td>
+                                <td><button class="type-torta">Torta</button></td>
+                                <td><button class="setor">Lanchonete</button></td>
+                                <td>1</td>
+                                <td>15/05/2024</td>
+                                <td>...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>© Produto ChefSmart. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
